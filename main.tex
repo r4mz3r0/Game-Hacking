@@ -5,6 +5,8 @@
 \usepackage{enumerate} 
 \usepackage{hyperref}
 \usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 \usepackage{listings}
 \usepackage{enumitem,amssymb}
 \newlist{todolist}{itemize}{2}
@@ -13,16 +15,29 @@
 
 \begin{document}
 
-\title{ Game  Hacking}
-\author{Ramiro Gonzalez}
+\title{ Game  Hacking for Testers Manual}
+\author{Ramiro Gonzalez Galvez}
 \date{\today}
 
 \maketitle
-\section{\href{https://www.cheatengine.org/}{\color{blue} Cheat Engine\color{black}}}
+\section{Cheat Engine}
 \begin{itemize}
-    \item Running cheat engine may trigger EAC (EasyAntiCheat) and plays may be kicked of banned from games.
-    \item CE (Cheat Engine) can manipulate client side data. Online sync client side data with server side data making and this makes CE impractical for MMORPG titles. 
+    \item Running \href{https://www.cheatengine.org/}{\color{blue}cheat engine\color{black}} may trigger EAC (EasyAntiCheat) and players may be kicked of banned from games.
+    \item CE (Cheat Engine) can manipulate client side data. Using CE on online games is impractical since they sync client side data with server side data. 
 \end{itemize}
+\subsection{Practical application on Blue-stack app player} 
+Cheating checkers free on blue stacks 
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[width=16cm]{images/Hacking-Free-Checkers.PNG}
+    \caption{Corrupted checkers free}
+    \label{fig:galaxy}
+\end{figure}
+\begin{itemize}
+    \item Install blue-stacks 
+    \item Use play store to install \href{https://play.google.com/store/apps/details?id=com.optimesoftware.checkers.free&hl=en_US&gl=US} {\color{blue}checkers free \color{black}} 
+\end{itemize}
+
 
 \subsection{Memory Scanner} 
 
@@ -33,4 +48,6 @@
     \item Process monitor 
     \item Hex editor
 \end{itemize}
+\section{Lag switching with \href{https://jagt.github.io/clumsy/}{Clumsy}}
+
 \end{document}
